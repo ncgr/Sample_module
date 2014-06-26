@@ -1,0 +1,17 @@
+The database description is as follows: 
+
+
+                                    Table "chado.biomaterial_value"
+       Column        |  Type  |                               Modifiers                                
+---------------------+--------+------------------------------------------------------------------------
+ name                | text   | 
+ cultivar            | text   | 
+ age                 | text   | 
+ tissue              | text   | 
+ treatment           | text   | 
+ phenotype           | text   | 
+ developmental_stage | text   | 
+ source              | text   | 
+ bio_val_id          | bigint | not null default nextval('biomaterial_value_bio_val_id_seq'::regclass)
+Indexes:
+    "biomaterial_value_pkey" PRIMARY KEY, btree (bio_val_id)
